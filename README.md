@@ -1,6 +1,6 @@
 # Simple PBTE Result Scraper
 
-This is my first try at making a web scraper and API using Python.
+This is my first try at making a web scraper and API using Python!
 
 ## What it does
 
