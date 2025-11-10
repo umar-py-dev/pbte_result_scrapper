@@ -5,18 +5,11 @@ import os
 
 
 
-
-
-# scraping Bee api:
-# 4OP91TAOK2RYQGWVKQCRK22H463I802KWM6PNWFLA4KTLQG9VB1S05RM4CWPHASK963L9YUCC5MGOD49
-#
-
-
 def extract():
     response = requests.get(
         url='https://app.scrapingbee.com/api/v1',
         params={
-            'api_key': '2APHXZKJ7S7TPTZCN2WTUKNLMD9M5BZV3FI6HFU6H4V6MEZQJMFMZQTWRTIEFOQ1LVCCL8W4NKWYC9IP',
+            'api_key': 'YOUR_SCRAPPING.BEE_API_HERE',
             'url': 'https://www.pbte.edu.pk/result.aspx',
             'premium_proxy': 'true',
             'country_code': 'pk',
@@ -30,8 +23,6 @@ print('html saved successfully')
 
 app = Flask(__name__)
 app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True  #  Enables formatted JSON output
-
-ZENROWS_API_KEY = "3eda5c89e7981954492cf01ca8eb4943b976c671"  # Replace with your ZenRows key
 
 @app.route("/pbte_result", methods=["GET"])
 def get_courses():
@@ -69,4 +60,5 @@ def get_courses():
 
 
 if __name__ == "__main__":
+
     app.run(host="0.0.0.0", port=8080)
