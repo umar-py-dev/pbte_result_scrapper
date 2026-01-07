@@ -34,7 +34,7 @@ pip install flask requests beautifulsoup4
 3. Run the file:
 
 ```bash
-python app.py
+python main.py
 ```
 
 4. Open your browser or Postman and go to:
