@@ -29,7 +29,7 @@ pip install flask requests beautifulsoup4
 
 ## How to run
 
-1. Save the code in a file `app.py`.
+1. Save the code in a file `main.py`.
 2. Replace your own API keys for ScrapingBee.
 3. Run the file:
 
